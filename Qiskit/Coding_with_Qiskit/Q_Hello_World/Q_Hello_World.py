@@ -10,10 +10,10 @@ import qiskit as q
 ### Create circuit (1/sqrt(2))(|00>+|11>) ###
 
 # A two qubit quantum register.
-qr = q.QuantumRegister(2) 
+qr = q.QuantumRegister(2,'q_0') 
 
 # Two classical bit register to take measurements from the quantum bits.
-cr = q.ClassicalRegister(2)
+cr = q.ClassicalRegister(2,'c_0')
 
 circuit = q.QuantumCircuit(qr, cr)
 
